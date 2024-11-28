@@ -45,6 +45,17 @@
             margin-top: 20px; /* Top margin */
         }
 
+        .signal-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 24px; /* Increased font size */
+            font-weight: bold; /* Bold font */
+            text-align: center;
+        }
+
         .loader {
             width: 150px;
             height: 4px;
@@ -96,7 +107,10 @@
         <button class="button2" id="signalButton">Signal</button>
         <img id="cup" class="rocket_fire" src="./images/fire.gif" style="display:none;">
         <img id="sup" class="rocket_boy" src="./images/boy.gif" style="display:none;">
-        <div id="responseText" class="text"></div>
+        
+        <!-- New signal box for displaying results -->
+        <div id="responseText" class="signal-box"></div>
+        
         <div id="coefficients" class="kif"></div>
         <div class="loader">
             <div class="bar"></div>
