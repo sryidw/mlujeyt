@@ -1,44 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&amp;display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucky Jet</title>
-    <style>
-        .page {
-            overflow: hidden;
-            color: white;
-            -webkit-user-select: none; 
-            -moz-user-select: none; 
-            -ms-user-select: none;
-            user-select: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* Full height */
-            flex-direction: column; /* Vertical layout */
-            position: relative;
-        }
+    <title>Lucky jet</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="page">
+    <div class="cv">
+        <img id="ob1" class="obloko" src="images/obl.svg">
+        <img id="ob2" class="obloko2" src="images/obl.svg">
+    </div>
 
-        .rocket {
-            text-align: center; /* Center text */
-        }
+    <div class="winner">
+        <img class="luck" src="images/Lucky.svg">
+        <img class="win" src="images/1win_logo.png">
+    </div>
 
-        .button2 {
-            width: 300px;
-            height: 50px;
-            border-radius: 12px;
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 20px;
-            letter-spacing: 0.08em;
-            text-align: center;
-            border: none;
-            display: inline-block;
-            color: rgb(221, 221, 221);
-            text-shadow: rgb(138, 138, 138) 0px 0px 20px;
-            background: linear-gradient(263.87deg, rgb(148, 78, 245) 0%, rgb(92, 36, 252) 100%);
-            box-shadow: rgba(25, 201, 245,
+    <div class="rocket">
+         <button class="button2" target="_blank2" onclick="location.href='https://entyludik.github.io/rodmain/'">Back to menu</button>
+        <div class="loader2"></div>
+        <div class="visible">
+            <iframe id="myIframe" src="https://100hp.app/lucky/onewin/" onload="hideElements()" scrolling="no"></iframe>
+        </div>
+
+
+        <div id="responseText" class="text"></div>
+
+        <script src="script1.js"></script>
+    </div>
+
+    <div id="result" class="rand"></div>
+</body>
+<div class="troywell-avia"></div>
+<div class="troywell-caa"></div>
+</html>
